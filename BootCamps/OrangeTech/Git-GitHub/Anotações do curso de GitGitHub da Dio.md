@@ -28,3 +28,5 @@ Configurando a referencia das pasta com o repositorio remoto (GITHUB)
 
 Visualizando a lista de repositorios remotos referentes a esta pasta.
 ** git remote -v **
+
+teste
