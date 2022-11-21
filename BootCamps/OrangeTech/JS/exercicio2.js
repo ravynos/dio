@@ -21,12 +21,12 @@ peso = 100;
 altura = 1.50;*/
 
 const peso = 100;
-const altura = 1.70
+const altura = 1.70;
 const imc = peso / /*(altura * altura)*/ Math.pow(altura, 2);
 
 console.log('Seu IMC é', imc.toFixed(2));
 
-if (imc < 18, 5) {
+if (imc < 18.5) {
     console.log('Você esta abaixo do peso');
 } else if (imc >= 18.5 && imc < 25) {
     console.log('Seu peso está normal');
