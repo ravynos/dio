@@ -7,10 +7,10 @@ e efetuar o cálculo adequado.
 
 Código condição de pagamento:
 
-- À vista Débito, recebe 10% de desconto;
-- À vista no dinheiro ou PIX, recebe 15% de desconto;
-- Em duas vezes, preço normal de atiqueta sem juros;
-- Acima de duas vezes, preço normal de etiqueta mais jutos de 10%.
+1 - À vista Débito, recebe 10% de desconto;
+2 - À vista no dinheiro ou PIX, recebe 15% de desconto;
+3 - Em duas vezes, preço normal de atiqueta sem juros;
+4 - Acima de duas vezes, preço normal de etiqueta mais jutos de 10%.
 */
 
 /*let valorProduto, formaPagamento, parcelamento;
@@ -36,4 +36,21 @@ if (formaPagamento === 'debito') {
     console.log('Total a pagar =', valorAPagar)
 };*/
 
+function aplicarDesconto(valor, desconto) {
+    return (valor - (valor * (desconto / 100)))
+}
 
+
+let valorProduto, formaPagamento;
+valorProduto = 200;
+formaPagamento = 4;
+
+if (formaPagamento === 1) {
+    console.log(aplicarDesconto(valorProduto, 10))
+} else if (formaPagamento === 2) {
+    console.log(aplicarDesconto(valorProduto, 15))
+} else if (formaPagamento === 3) {
+    console.log(valorProduto)
+} else if (formaPagamento === 4) {
+    console.log(aplicarDesconto(valorProduto, -10))
+};
