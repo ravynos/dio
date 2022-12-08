@@ -5,28 +5,23 @@
     gasto em reais para realizar este percurso.
 */
 
-class Carros {
+class Carro {
     marca;
     cor;
     gastoMedio;
-    precoCombustivel;
-    kmRodado;
-    consumoLitro;
 
-    constructor(marca, cor, gastoMedio, precoCombustivel, kmRodado, consumoLitro){ 
+    constructor(marca, cor, gastoMedio, precoCombustivel, distancia){ 
     this.marca = marca;
     this.cor = cor;
-    this.gastoMedio = gastoMedio;
-    this.precoCombustivel = precoCombustivel;
-    this.kmRodado = kmRodado;
-    this.consumoLitro = kmRodado / gastoMedio;}
+    this.gastoMedio = 1 / gastoMedio;
+    }
+
+    calcularGasto(distancia, precoCombustivel){
+        return distancia * this.gastoMedio * precoCombustivel;
+}
 }
 
-function calcularGasto(){
-        return consumoLitro * precoCombustivel
-}
+const gol = new Carro('Wolks', 'Preta', 10);
 
-const gol = new Carros ('Gol', 'Preto', 10, 4.97, 200);
-
-
-console.log(gol)
+console.log('Meu carro gasta R$', gol.calcularGasto(200, 4.97).toFixed(2), 
+'reais para realizar essa viagem.');
