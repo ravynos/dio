@@ -15,10 +15,45 @@
     98
 */
 
+/*const numeroSorteados = [];
+
+for (let i = 0; i < 5; i++) {
+    const numeroSorteado = gets();
+    numeroSorteados.push(numeroSorteado);
+}
+
+let maiorValor = 0;
+
+for (let i = 0; i < numeroSorteados.length; i++) {
+    const numeroSorteado = numeroSorteados[i];
+    if (numeroSorteado > maiorValor){
+        maiorValor = numeroSorteado;
+    }
+}
+ 
+print(maiorValor);*/
+
+/*let maiorValorEncontrado = 0
+
+for (let i = 0; i < 5; i++) {
+    const numeroSorteado = gets();
+    if (numeroSorteado > maiorValorEncontrado) {
+        maiorValorEncontrado = numeroSorteado
+    }
+}
+
+print(maiorValorEncontrado);*/
+
 const { gets, print } = require('./funcoes-auxiliares')
 
-print(gets())
-print(gets())
-print(gets())
-print(gets())
-print(gets())
+const quantidadeDeAlunos = gets();
+let maiorValorEncontrado = 0;
+
+for (let i = 0; i < quantidadeDeAlunos; i++) {
+    const numeroSorteado = gets();
+    if (numeroSorteado > maiorValorEncontrado) {
+        maiorValorEncontrado = numeroSorteado;
+    }
+}
+
+print(maiorValorEncontrado);
