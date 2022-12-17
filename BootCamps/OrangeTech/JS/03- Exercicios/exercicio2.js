@@ -16,13 +16,11 @@
     - Acima de 40, Obesidade grave;
 */
 
-/*let peso, altura, imc;
+let peso, altura, imc;
 peso = 100;
-altura = 1.50;*/
+altura = 1.50;
 
-const peso = 100;
-const altura = 1.70;
-const imc = peso / /*(altura * altura)*/ Math.pow(altura, 2);
+imc = peso / /*(altura * altura)*/ Math.pow(altura, 2);
 
 console.log('Seu IMC é', imc.toFixed(2));
 
