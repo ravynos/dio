@@ -12,10 +12,10 @@ Imprima no console o valor que será gasto para realizar esta viagem.
 */
 
 const precoEtanol = 3.99;
-const precoGasolina = 4.99;
-const tipoCombustivel = 'gasolina';
+const precoGasolina = 5.39;
+const tipoCombustivel = 'etanol';
 const gastoMedio = 10.00;
-const kmRodado = 200;
+const kmRodado = 2200;
 
 const consumoLitro = kmRodado / gastoMedio;
 
